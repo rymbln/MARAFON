@@ -1,0 +1,265 @@
+﻿body
+{
+	background: #B4B4B4 url(../../images/body_bg.gif) repeat left top;
+	font-family: Tahoma, Arial, sans-serif;
+	font-size:75%;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+._left{text-align:left}
+
+.TopHeaderStyle{font-family:Verdana; font-style:normal; font-weight:bold; color:White; background-color:#5D7B9D; font-size:small; text-align:center;width:100%;}
+.MainHeaderStyle{font-family:Verdana; font-style:normal; font-weight:bold; color:White; background-color:#5D7B9D; font-size:medium; text-align:center;width:100%;}
+.MenuPanelStyle{font-family:Verdana; font-style:normal; font-weight:bold; color:#284E98; background-color:#B5C7DE; font-size:small; text-align:left;width:100%;}
+.LoginViewPanelStyle{font-family:Verdana; font-style:normal; font-weight:bold; color:Red; background-color:#B5C7DE; font-size:small; text-align:right; background: #B4B4B4 url(../../images/body_bg.gif) repeat left top;  border-color:Red; border-width:medium;}
+.MainPanelStyle{font-family:Verdana; font-style:normal; font-weight:bold; color:Black; background-color:White; font-size:small; text-align:center; background: #B4B4B4 url(../../images/body_bg.gif) repeat left top; padding-left:10px; padding-right: 10px;}
+.AboutPanelStyle{font-family:Verdana; font-style:normal; font-weight:bold; color:Black; background-color:White; font-size:small; text-align:justify; padding-left:10px; padding-right: 10px;}
+.CommonPanelStyle{font-family:Verdana; font-style:normal; font-weight:bold; color:Black; background-color:White; font-size:small; text-align:left;}
+
+.ErrorLabelStyle{font-family:Verdana; font-style:normal; font-weight:bold; color:Red; background-color:inherit; font-size:small}
+
+.TVwT{background-color:White; font-family:Verdana; color:Black}
+.TVwP{background-color:White; font-family:Verdana; font-size:small; color:Black}
+.TVwH{background-color:White; font-family:Verdana; color:Blue}
+.TVwS{background-color:White; color:Blue}
+.TVwN{background-color:White; font-family:Verdana; font-size:small; color:Black}
+.TVwR{background-color:White; font-family:Verdana; font-size:small; font-weight:bold; color:Black}
+.TVwL{background-color:White; font-family:Verdana; font-size:small; color:Black}
+
+.MM{background-color:#B5C7DE; font-family:Verdana; font-size:small; color:#284E98; height:inherit}
+.MSMI{padding-bottom:5px; padding-top:5px; padding-left:2px; padding-right:2px; font-size:small}
+.MDH{background-color:#284E98; color:White; font-size:small}
+.MDM{background-color:#B5C7DE; font-size:small}
+.MSS{background-color:#507CD1; font-size:small}
+.MDS{background-color:#507CD1; font-size:small}
+.MDMI{padding-bottom:5px; padding-top:5px; padding-left:2px; padding-right:2px; background-color:#B5C7DE; font-size:small}
+.MSH{background-color:#284E98; color:White; font-size:small}
+
+.GVM{color:#333333; font-family:Verdana; font-size:medium; font-style:normal; font-weight:bold; text-align:left}
+.GVF{background-color:#A4CAAA; font-weight:bold; color:White; font-size:small; font-style:normal; font-weight:normal}
+.GVR{background-color:#EFF3FB; font-size:small; font-style:normal; font-weight:normal}
+.GVER{background-color:#2461BF; font-size:small; font-style:normal; font-weight:normal}
+.GVSR{background-color:#73EFC1; font-weight:bold; font-size:small; color:#333333; font-style:normal; font-weight:normal}
+.GVP{background-color:#BBCC9C; color:White; text-align:center; font-size:small; font-style:normal; font-weight:normal}
+.GVH{background-color:#A4CAAA; font-weight:bold; color:White; font-size:small; text-align:center; font-style:normal; font-weight:normal}
+.GVAR{background-color:White; font-size:small; font-style:normal; font-weight:normal}
+
+.DVM{Height:40px;Color:#333333; font-size:medium; font-style:normal; font-weight:bold; text-align:left}
+.DVFS{background-color:#507CD1; font-weight:bold; Color:White; font-size:small; font-style:normal; font-weight:normal; text-align:left}
+.DVCRS{background-color:#507CD1; font-weight:bold; font-size:small; font-style:normal; font-weight:normal; text-align:left}
+.DVERS{background-color:#EFF3FB; font-size:small; font-style:normal; font-weight:normal; text-align:left; padding-left:5px}
+.DVRS{background-color:#EFF3FB; font-size:small; font-style:normal; font-weight:normal; text-align:left; padding-left:5px}
+.DVPS{background-color:#BBCC9C; Color:White; font-size:small; font-style:normal; font-weight:normal}
+.DVFHS{background-color:#DEE8F5; font-weight:bold; font-size:small; font-style:normal; font-weight:normal; text-align:right; padding-right:5px}
+.DVHS{background-color:#507CD1; font-weight:bold; Color:White; font-size:medium; text-align:center; font-style:normal; font-weight:normal}
+.DVARS{background-color:White; font-size:small; font-style:normal; font-weight:normal; text-align:left; padding-left:5px}
+.DVIRS{background-color:White; font-size:small; font-style:normal; font-weight:normal; text-align:left; padding-left:5px}
+
+.ajax__tab_default .ajax__tab_header {white-space:nowrap;}
+.ajax__tab_default .ajax__tab_outer {display:-moz-inline-box;display:inline-block}
+.ajax__tab_default .ajax__tab_inner {display:-moz-inline-box;display:inline-block}
+.ajax__tab_default .ajax__tab_tab {margin-right:4px;overflow:hidden;text-align:right;cursor:pointer;display:-moz-inline-box;display:inline-block}
+
+/* xp theme */
+.ajax__tab_xp .ajax__tab_header {font-family:verdana,tahoma,helvetica;font-size:11px;background:url(../../images/tab-line.gif) repeat-x bottom; text-align:left;}
+.ajax__tab_xp .ajax__tab_outer {padding-right:4px;background:url(../../images/tab-right.gif) no-repeat right;height:21px;}
+.ajax__tab_xp .ajax__tab_inner {padding-left:3px;background:url(../../images/tab-left.gif) no-repeat;}
+.ajax__tab_xp .ajax__tab_tab {height:13px;padding:4px;margin:0;background:url(../../images/tab.gi) repeat-x;}
+.ajax__tab_xp .ajax__tab_hover .ajax__tab_outer {background:url(../../images/tab-hover-right.gif) no-repeat right;}
+.ajax__tab_xp .ajax__tab_hover .ajax__tab_inner {background:url(../../images/tab-hover-left.gif) no-repeat;}
+.ajax__tab_xp .ajax__tab_hover .ajax__tab_tab {background:url(../../images/tab-hover.gif) repeat-x;}
+.ajax__tab_xp .ajax__tab_active .ajax__tab_outer {background:url(../../images/tab-active-right.gif) no-repeat right;}
+.ajax__tab_xp .ajax__tab_active .ajax__tab_inner {background:url(../../images/tab-active-left.gif) no-repeat;}
+.ajax__tab_xp .ajax__tab_active .ajax__tab_tab {background:url(../../images/tab-active.gif) repeat-x;}
+.ajax__tab_xp .ajax__tab_body {font-family:verdana,tahoma,helvetica;font-size:10pt;border:1px solid #999999;border-top:0;padding:8px;background-color:#ffffff;}
+
+/* scrolling */
+.ajax__scroll_horiz {overflow-x:scroll;}
+.ajax__scroll_vert {overflow-y:scroll;}
+.ajax__scroll_both {overflow:scroll}
+.ajax__scroll_auto {overflow:auto}
+
+/* FORM ELEMENTS   
+----------------------------------------------------------*/
+
+fieldset
+{
+    margin: 1em 0px;
+    padding: 1em;
+    border: 1px solid #ccc;
+}
+
+fieldset p 
+{
+    margin: 2px 12px 10px 10px;
+}
+
+fieldset.login label, fieldset.register label, fieldset.changePassword label
+{
+    display: block;
+}
+
+fieldset label.inline 
+{
+    display: inline;
+}
+
+legend 
+{
+    font-size: 1.1em;
+    font-weight: 600;
+    padding: 2px 4px 8px 4px;
+}
+
+input.textEntry 
+{
+    width: 320px;
+    border: 1px solid #ccc;
+}
+
+input.passwordEntry 
+{
+    width: 320px;
+    border: 1px solid #ccc;
+}
+
+div.accountInfo
+{
+    width: 42%;
+}
+
+/* MISC  
+----------------------------------------------------------*/
+
+.clear
+{
+    clear: both;
+}
+
+.title
+{
+    display: block;
+    float: left;
+    text-align: left;
+    width: 940px;
+}
+
+.loginDisplay
+{
+    font-size: 1.1em;
+    display: block;
+    text-align: right;
+    padding: 10px;
+    color: White;
+}
+
+.loginDisplay a:link
+{
+    color: white;
+}
+
+.loginDisplay a:visited
+{
+    color: white;
+}
+
+.loginDisplay a:hover
+{
+    color: white;
+}
+
+.failureNotification
+{
+    font-size: 1.2em;
+    color: Red;
+}
+
+.bold
+{
+    font-weight: bold;
+}
+
+.submitButton
+{
+    text-align: right;
+    padding-right: 10px;
+}
+
+/*Modal Popup*/
+.modalBackground {
+	background-color:Gray;
+	filter:alpha(opacity=60);
+	opacity:0.6;
+}
+
+.modalPopup {
+	background-color:#ffffdd;
+	border-width:10px;
+	border-style:solid;
+	border-color:Gray;
+	padding:10px;
+	width:550px;
+	text-align:right;
+}
+
+.sampleStyleA {
+	background-color:#FFF;
+}
+
+.sampleStyleB {
+	background-color:#FFF;
+	font-family:monospace;
+	font-size:10pt;
+	font-weight:bold;
+}
+
+.sampleStyleC {
+	background-color:#ddffdd;
+	font-family:sans-serif;
+	font-size:10pt;
+	font-style:italic;
+}
+
+.sampleStyleD {
+	background-color:Blue;
+	color:White;
+	font-family:Arial;
+	font-size:10pt;
+}
+
+/*AutoComplete flyout */
+
+.autocomplete_completionListElement 
+{  
+	visibility : hidden;
+	margin : 0px!important;
+	background-color : inherit;
+	color : windowtext;
+	border : buttonshadow;
+	border-width : 1px;
+	border-style : solid;
+	cursor : 'default';
+	overflow : auto;
+	height : 200px;
+    text-align : left; 
+    list-style-type : none;
+}
+
+/* AutoComplete highlighted item */
+
+.autocomplete_highlightedListItem
+{
+	background-color: #ffff99;
+	color: black;
+	padding: 1px;
+}
+
+/* AutoComplete item */
+
+.autocomplete_listItem 
+{
+	background-color : window;
+	color : windowtext;
+	padding : 1px;
+}

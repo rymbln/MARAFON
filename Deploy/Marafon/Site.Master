@@ -1,0 +1,41 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Marafon.SiteMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>МАРАФОН</title>
+</head>
+<body>
+    <form runat="server">
+        <asp:Panel ID="Panel1" runat="server" SkinID="TopHeaderPanel">
+            Мониторинг РАспространенности и антибиотикорезистентности возбудителей нозокомиальных инфекций и практики использования антимикробных препаратов в многопроФильных стационарах различных региОНов России (&quot;МАРАФОН&quot;)
+        </asp:Panel>
+        <asp:Panel ID="Panel3" runat="server" SkinID="MenuPanel">
+            <asp:Menu ID="NavigationMenu" runat="server" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
+                <Items>
+                </Items>
+            </asp:Menu>
+        </asp:Panel>
+        <asp:Panel ID="Panel4" runat="server" SkinID="LoginViewPanel" >
+                <asp:LoginView ID="HeadLoginView" runat="server" EnableViewState="false" >
+                    <LoggedInTemplate>
+                        Добро пожаловать, <asp:LoginName ID="HeadLoginName" runat="server"/>! [<asp:LoginStatus ID="HeadLoginStatus" runat="server" LogoutAction="Redirect" LogoutText="Выход" LogoutPageUrl="~/"/>]
+                    </LoggedInTemplate>
+                </asp:LoginView>
+                <asp:ScriptManager ID="ScriptManager1" runat="server">
+                    <Services>
+                            <asp:ServiceReference Path="~/GetAutoComplete.asmx" InlineScript="true" />
+                            <asp:ServiceReference Path="~/GetABWard.asmx" InlineScript="true" />
+                    </Services>
+        </asp:ScriptManager>
+        </asp:Panel>
+        <asp:Panel ID="Panel5" runat="server" SkinID="MainPanel">
+            <br />
+            <asp:ContentPlaceHolder ID="MainContent" EnableViewState="true" runat="server">
+            </asp:ContentPlaceHolder>
+        </asp:Panel>
+
+    </form>
+</body>
+</html>

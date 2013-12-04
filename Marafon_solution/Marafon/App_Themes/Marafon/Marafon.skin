@@ -1,0 +1,66 @@
+﻿<asp:Panel runat="server" SkinID="TopHeaderPanelLogin" Font-Names="Verdana" Font-Bold="true" ForeColor="White" BackColor="#5D7B9D" HorizontalAlign="Center" Font-Size="Small"></asp:Panel>
+<asp:Panel runat="server" SkinID="MainHeaderPanelLogin" Font-Names="Verdana" Font-Bold="true" ForeColor="White" BackColor="#5D7B9D" HorizontalAlign="Center" Font-Size="Medium"></asp:Panel>
+<asp:Panel runat="server" SkinID="MainPanelLogin" Font-Names="Verdana" Font-Bold="true" ForeColor="Black" BackColor="White" HorizontalAlign="Center" Font-Size="Small" BackImageUrl="~/images/body_bg.gif"></asp:Panel>
+<asp:Login  runat="server" BackColor="#F7F6F3" BorderColor="#E6E2D8" BorderPadding="4" BorderStyle="Solid" BorderWidth="1px" ForeColor="#333333">
+                <CheckBoxStyle/>
+                <TextBoxStyle/>
+                <LoginButtonStyle BackColor="#FFFBFF" BorderColor="#CCCCCC" BorderStyle="Solid" BorderWidth="1px" ForeColor="#284775"/>
+                <ValidatorTextStyle/>
+                <InstructionTextStyle Font-Italic="True" ForeColor="Black"/>
+                <LabelStyle/>
+                <FailureTextStyle/>
+                <TitleTextStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White"/>
+</asp:Login>
+
+<asp:Panel runat="server" SkinID="TopHeaderPanel" CssClass="TopHeaderStyle"></asp:Panel>
+<asp:Panel runat="server" SkinID="MainHeaderPanel" CssClass="MainHeaderStyle"></asp:Panel>
+<asp:Panel runat="server" SkinID="MenuPanel" CssClass="MenuPanelStyle"></asp:Panel>
+<asp:Panel runat="server" SkinID="LoginViewPanel" CssClass="LoginViewPanelStyle"></asp:Panel>
+<asp:Panel runat="server" SkinID="collapsePanel" CssClass="collapsePanelStyle"></asp:Panel>
+<asp:Panel runat="server" SkinID="collapsePanelHeader" CssClass="collapsePanelHeaderStyle" ></asp:Panel>
+<asp:Panel runat="server" SkinID="MainPanel" CssClass="MainPanelStyle" ></asp:Panel>
+<asp:Panel runat="server" SkinID="AboutPanel" CssClass="AboutPanelStyle" ></asp:Panel>
+<asp:Panel runat="server" CssClass="CommonPanelStyle" ></asp:Panel>
+
+<asp:Label runat="server" SkinID="ErrorLabel" CssClass="ErrorLabelStyle"></asp:Label>
+
+<asp:Menu runat="server" Orientation="Horizontal" DynamicHorizontalOffset="1" StaticSubMenuIndent="2px" SkipLinkText="" CssClass="MM">
+    <StaticMenuItemStyle CssClass="MSMI" />
+    <DynamicHoverStyle CssClass="MDH" />
+    <DynamicMenuStyle CssClass="MDM" />
+    <StaticSelectedStyle CssClass="MSS" />
+    <DynamicSelectedStyle CssClass="MDS" />
+    <DynamicMenuItemStyle CssClass="MDMI" />
+    <StaticHoverStyle CssClass="MSH" />
+</asp:Menu>
+
+<asp:GridView runat="server" AllowSorting="True" AutoGenerateColumns="False" CellPadding="1" GridLines="Both" CssClass="GVM">
+    <FooterStyle CssClass="GVF" Wrap="False" />
+    <RowStyle CssClass="GVR"  Wrap="False" />
+    <EditRowStyle CssClass="GVER" Wrap="False" />
+    <SelectedRowStyle CssClass="GVSR" Wrap="False" />
+    <PagerStyle CssClass="GVP" Wrap="False" />
+    <HeaderStyle CssClass="GVH" Wrap="False" />
+    <AlternatingRowStyle CssClass="GVAR" Wrap="False" />
+</asp:GridView>
+
+<asp:TreeView runat="server" CssClass="TVwT">
+    <ParentNodeStyle CssClass="TVwP" />
+    <HoverNodeStyle CssClass="TVwH" />
+    <SelectedNodeStyle CssClass="TVwS" />
+    <NodeStyle CssClass="TVwN" />
+    <RootNodeStyle CssClass="TVwR" />
+    <LeafNodeStyle CssClass="TVwL" ImageUrl="~/App_Images/Leaf.gif" />
+</asp:TreeView>
+
+<asp:DetailsView runat="server" CellPadding="1" GridLines="Both" HorizontalAlign="Justify" CssClass="DVM">
+    <FooterStyle CssClass="DVFS" />
+    <CommandRowStyle CssClass="DVCRS" />
+    <EditRowStyle CssClass="DVERS" />
+    <RowStyle CssClass="DVRS" />
+    <PagerStyle HorizontalAlign="Center" CssClass="DVPS" />
+    <FieldHeaderStyle CssClass="DVFHS" />
+    <HeaderStyle CssClass="DVHS" />
+    <AlternatingRowStyle CssClass="DVARS" />
+</asp:DetailsView>
+

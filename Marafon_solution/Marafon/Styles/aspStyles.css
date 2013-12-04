@@ -1,0 +1,130 @@
+﻿body 
+{
+	background: #B4B4B4 url(images/body_bg.gif) repeat left top;
+    font-family: Verdana; /* Рубленый шрифт текста */
+    margin: 5px; /* Отступы для браузера IE */
+    padding: 5px; /* Отступы для браузера Firefox */
+}
+
+.PageStyle{font-family:Verdana; font-style:normal; background-color:#B4B4B4}
+.HeaderStyle{font-family:Verdana; font-style:normal; font-weight:bold; color:White; background-color:#4b6c9e; text-align:center}
+.HeaderLoginStyle{font-family:Verdana; font-style:normal; font-weight:bold; color:White; background-color:#B4B4B4; text-align:right; font-size:small}
+.MenuDivStyle{background-color:#B5C7DE}
+.MainSpaceStyleStyle{background: white url(images/body_bg.gif) repeat left top; font-family: Verdana; margin: 5px; padding: 5px}
+
+.LabelStyle{font-size:small; font-family:Verdana; font-style:italic}
+.MessageLabelStyle{font-size:medium; font-family:Verdana; font-style:italic; font-weight:bold; color:Red}
+.TextBoxStyle{font-size:small; font-family:Verdana}
+.DropDownListStyle{font-size:small; font-family:Verdana; font-style:italic}
+.CheckBoxStyle{font-size:small; font-family:Verdana; font-weight:bold}
+.ButtonStyle{font-size:small; font-family:Verdana; font-style:italic}
+.RadioButtonListStyle{font-size:small; font-family:Verdana; font-style:italic}
+
+.TVwT{background-color:White; font-family:Verdana; color:Black}
+.TVwP{background-color:White; font-family:Verdana; font-size:small; color:Black}
+.TVwH{background-color:White; font-family:Verdana; color:Blue}
+.TVwS{background-color:White; color:Blue}
+.TVwN{background-color:White; font-family:Verdana; font-size:small; color:Black}
+.TVwR{background-color:White; font-family:Verdana; font-size:small; font-weight:bold; color:Black}
+.TVwL{background-color:White; font-family:Verdana; font-size:small; color:Black}
+
+.MM{background-color:#B5C7DE; font-family:Verdana; font-size:small; color:#284E98}
+.MSMI{padding-bottom:5px; padding-top:5px; padding-left:2px; padding-right:2px; font-size:small}
+.MDH{background-color:#284E98; color:White; font-size:small}
+.MDM{background-color:#B5C7DE; font-size:small}
+.MSS{background-color:#507CD1; font-size:small}
+.MDS{background-color:#507CD1; font-size:small}
+.MDMI{padding-bottom:5px; padding-top:5px; padding-left:2px; padding-right:2px; background-color:#B5C7DE; font-size:small}
+.MSH{background-color:#284E98; color:White; font-size:small}
+
+.GVM{color:#333333; font-family:Verdana; font-size:medium; font-style:normal; font-weight:bold}
+.GVF{background-color:#A4CAAA; font-weight:bold; color:White; font-size:small; font-style:normal; font-weight:normal}
+.GVR{background-color:#EFF3FB; font-size:small; font-style:normal; font-weight:normal}
+.GVER{background-color:#2461BF; font-size:small; font-style:normal; font-weight:normal}
+.GVSR{background-color:#73EFC1; font-weight:bold; font-size:small; color:#333333; font-style:normal; font-weight:normal}
+.GVP{background-color:#BBCC9C; color:White; text-align:center; font-size:small; font-style:normal; font-weight:normal}
+.GVH{background-color:#A4CAAA; font-weight:bold; color:White; font-size:small; text-align:center; font-style:normal; font-weight:normal}
+.GVAR{background-color:White; font-size:small; font-style:normal; font-weight:normal}
+
+.DVM{Height:40px;Color:#333333; font-size:medium; font-style:normal; font-weight:bold}
+.DVFS{background-color:#A4CAAA; font-weight:bold; Color:White; font-size:small; font-style:normal; font-weight:normal}
+.DVCRS{background-color:#D1DDF1; font-weight:bold; font-size:small; font-style:normal; font-weight:normal}
+.DVERS{background-color:#2461BF; font-size:small; font-style:normal; font-weight:normal}
+.DVRS{background-color:#EFF3FB; font-size:small; font-style:normal; font-weight:normal}
+.DVPS{background-color:#BBCC9C; Color:White; font-size:small; font-style:normal; font-weight:normal}
+.DVFHS{background-color:#DEE8F5; font-weight:bold; font-size:small; font-style:normal; font-weight:normal}
+.DVHS{background-color:#A4CAAA; font-weight:bold; Color:White; font-size:medium; text-align:center; font-style:normal; font-weight:normal}
+.DVARS{background-color:White; font-size:small; font-style:normal; font-weight:normal}
+
+.ADIV{width:230px; text-align:left;background-color:#B5C7DE; font-family:Verdana; font-size:small; color:#284E98}
+
+.pageTop  /* Верхний блок */
+{
+ width:100%;
+ text-align:center;
+}
+.pageLeft  /* Левая колонка */
+{
+ float: left; /* Обтекание справа */
+ width: 15%; /* Ширина колонки */
+}
+.pageRight  /* Правая колонка */
+{
+ float: right; /* Обтекание справа */
+ width: 84%; /* Отступ слева */
+ overflow:auto;
+}
+.pageBottom /* Нижний блок */
+{ 
+ background: #333; /* Цвет фона */
+ color: #fff; /* Цвет текста */
+ clear: both; /* Отменяем обтекание */
+}
+.pageMain /* Средняя колонка при наличии верхней */
+{ 
+ float: right; /* Обтекание справа */
+ width: 100%; /* По ширине страницы */
+}
+.pageLeftInMain /* Левая колонка в центральной */
+{ 
+ overflow:auto;
+ float: left; /* Обтекание справа */
+ width: 18%; /* Ширина колонки */
+}
+.pageRightInMain /* Правая колонка в центральной */
+{ 
+ overflow-x:scroll;
+ overflow-y:none;
+ float: right; /* Обтекание справа */
+ width:81%; /* Отступ слева */
+}
+.reportCenterP
+{
+ margin: 0cm 0cm 0pt; 
+ text-align: center
+}
+.reportCenterSpan
+{
+ font-size: 8pt; 
+ font-family:'Verdana', 'sans-serif'
+}
+.reportCenterSpanBig
+{
+ font-size: 10pt; 
+ font-family:'Verdana', 'sans-serif'
+}
+.reportCenterSpanSmall
+{
+ font-size: 8pt;
+ font-weight:normal; 
+ font-family:'Verdana', 'sans-serif'
+}
+.tableFormatting
+{
+}
+.letterStyle, .letterStyle li
+{
+display:inline;
+margin-left:0;
+padding-right: 5px;
+}
