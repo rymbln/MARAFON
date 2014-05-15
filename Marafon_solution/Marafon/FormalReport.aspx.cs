@@ -170,10 +170,20 @@ namespace Marafon
                 Microsoft.Office.Interop.Excel.Workbook ExcelBook = OpenExcelFile(Server.MapPath("") + "\\App_Files\\source_report.xls", ExcelObj);
                 try
                 {
-                    BuildExcelSheet(dsrcFormalReport1, ExcelBook, 1, 1);
-                    BuildExcelSheet(dsrcFormalReport2, ExcelBook, 3, 2);
-                    BuildExcelSheet(dsrcFormalReport3, ExcelBook, 5, 3);
+                    if (this.ddlSelectQuarter.SelectedValue == "[Квартал]")
+                    {
+                        BuildExcelSheet(dsrcFormalReport1, ExcelBook, 1, 1);
+                        BuildExcelSheet(dsrcFormalReport2, ExcelBook, 3, 2);
+                        BuildExcelSheet(dsrcFormalReport3, ExcelBook, 5, 3);
+                    }
+                    else
+                    {
+                        BuildExcelSheet(dsrcFormalReport11, ExcelBook, 1, 1);
+                        BuildExcelSheet(dsrcFormalReport22, ExcelBook, 3, 2);
+                        BuildExcelSheet(dsrcFormalReport33, ExcelBook, 5, 3);
+                    }
 
+                    
                     string ExcelFileTmp = ExcelBook.FullName;
                     ExcelBook.Save();
                     ExcelBook.Close();

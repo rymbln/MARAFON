@@ -70,6 +70,72 @@
                                 PropertyName="SelectedValue" />
                         </SelectParameters>
                     </asp:SqlDataSource>
+        
+                            <asp:SqlDataSource ID="dsrcFormalReport11" runat="server" 
+                        ConnectionString="<%$ ConnectionStrings:MarafonConnection %>" 
+                        ProviderName="System.Data.SqlClient" SelectCommand="DBO.procGetStatisticsGrid" 
+                        SelectCommandType="StoredProcedure" 
+                        onselecting="dsrcFormalReport1_Selecting">
+                        <SelectParameters>
+                            <asp:Parameter DefaultValue="1" Name="IS_ATC_CODE" Type="Int32" />
+                            <asp:Parameter DefaultValue="3" Name="INT_ATC_CODE_DIGIT" Type="Int32" />
+                            <asp:Parameter DefaultValue="1" Name="IS_DID_100" Type="Int32" />
+                            <%--<asp:Parameter DefaultValue="1" Name="IS_WARD" Type="Int32" />--%>
+                            <asp:Parameter DefaultValue="0" Name="IS_DID_PERCENT" Type="Int32" />
+                  <%--          <asp:Parameter DefaultValue="2" Name="IS_QUARTER" />--%>
+                            <asp:Parameter DefaultValue="1" Name="IS_REPORT" Type="Byte" />
+
+                            <asp:SessionParameter Name="SUSER" SessionField="uid" Type="String" />
+        <%--                    <asp:ControlParameter ControlID="ddlSelectQuarter" Name="STR_QUARTER" 
+                                PropertyName="SelectedValue" />--%>
+                            <asp:ControlParameter ControlID="ddlSelectYear" Name="STR_YEAR" 
+                                PropertyName="SelectedValue" />
+                        </SelectParameters>
+                    </asp:SqlDataSource>
+                    <asp:SqlDataSource ID="dsrcFormalReport22" runat="server" 
+                        ConnectionString="<%$ ConnectionStrings:MarafonConnection %>" 
+                        ProviderName="System.Data.SqlClient" SelectCommand="DBO.procGetStatisticsGrid" 
+                        SelectCommandType="StoredProcedure" 
+                        onselecting="dsrcFormalReport2_Selecting">
+                        <SelectParameters>
+                            <asp:Parameter DefaultValue="1" Name="IS_ATC_CODE" Type="Int32" />
+                            <asp:Parameter DefaultValue="1" Name="INT_VARIANT_NUMBER" Type="Int32" />
+                            <asp:Parameter DefaultValue="1" Name="IS_DID_100" Type="Int32" />
+                            <asp:Parameter DefaultValue="1" Name="IS_DID_PERCENT" Type="Int32" />
+                            <%--<asp:Parameter DefaultValue="1" Name="IS_WARD" Type="Int32" />--%>
+                 <%--           <asp:Parameter DefaultValue="2" Name="IS_QUARTER" />--%>
+                            <asp:Parameter DefaultValue="1" Name="IS_REPORT" Type="Byte" />
+
+                            <asp:SessionParameter Name="SUSER" SessionField="uid" Type="String" />
+                    <%--        <asp:ControlParameter ControlID="ddlSelectQuarter" Name="STR_QUARTER" 
+                                PropertyName="SelectedValue" />--%>
+                            <asp:ControlParameter ControlID="ddlSelectYear" Name="STR_YEAR" 
+                                PropertyName="SelectedValue" />
+                        </SelectParameters>
+                    </asp:SqlDataSource>
+                    <asp:SqlDataSource ID="dsrcFormalReport33" runat="server" 
+                        ConnectionString="<%$ ConnectionStrings:MarafonConnection %>" 
+                        ProviderName="System.Data.SqlClient" SelectCommand="DBO.procGetStatisticsGrid" 
+                        SelectCommandType="StoredProcedure" 
+                        onselecting="dsrcFormalReport3_Selecting">
+                        <SelectParameters>
+                            <asp:Parameter DefaultValue="1" Name="IS_ATC_CODE" Type="Int32" />
+                            <asp:Parameter DefaultValue="1" Name="INT_VARIANT_NUMBER" Type="Int32" />
+                            <asp:Parameter DefaultValue="1" Name="IS_DID_100" Type="Int32" />
+                            <asp:Parameter DefaultValue="1" Name="IS_DID_PERCENT" Type="Int32" />
+                            <asp:Parameter DefaultValue="1" Name="IS_GENERIC_AB" Type="Int32" />
+                            <asp:Parameter DefaultValue="1" Name="IS_ADMIN_ROUTE" Type="Int32" />
+                            <%--<asp:Parameter DefaultValue="1" Name="IS_WARD" Type="Int32" />--%>
+                           <%-- <asp:Parameter DefaultValue="2" Name="IS_QUARTER" />--%>
+                            <asp:Parameter DefaultValue="1" Name="IS_REPORT" Type="Byte" />
+
+                            <asp:SessionParameter Name="SUSER" SessionField="uid" Type="String" />
+         <%--                   <asp:ControlParameter ControlID="ddlSelectQuarter" Name="STR_QUARTER" 
+                                PropertyName="SelectedValue" />--%>
+                            <asp:ControlParameter ControlID="ddlSelectYear" Name="STR_YEAR" 
+                                PropertyName="SelectedValue" />
+                        </SelectParameters>
+                    </asp:SqlDataSource>
 
         <div style="background-color:White; text-align:left">
 
@@ -120,8 +186,8 @@
                         LoadingText="Загрузка..." PromptText="[Квартал]" 
                         ServiceMethod="GetYearAndQuarter" ServicePath="~/GetYearQuarter.asmx">
                     </cc1:CascadingDropDown>
-                    <asp:RequiredFieldValidator ID="rvQuarter" runat="server" 
-                        ControlToValidate="ddlSelectQuarter" ErrorMessage="*"></asp:RequiredFieldValidator>
+               <%--     <asp:RequiredFieldValidator ID="rvQuarter" runat="server" 
+                        ControlToValidate="ddlSelectQuarter" ErrorMessage="*"></asp:RequiredFieldValidator>--%>
                 </td>
             </tr>
         </table>

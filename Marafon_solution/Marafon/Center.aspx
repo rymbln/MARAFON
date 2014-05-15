@@ -67,7 +67,7 @@
                 EnableViewState="False" ProviderName="System.Data.SqlClient" SelectCommand="SELECT REGION_ID, DESCRIPTION FROM dbo.REGION ORDER BY DESCRIPTION">
             </asp:SqlDataSource>
             <asp:SqlDataSource ID="dsrcLogic" runat="server" ConnectionString="<%$ ConnectionStrings:MarafonConnection %>"
-                EnableViewState="False" ProviderName="System.Data.SqlClient" SelectCommand="SELECT logic_id, DESCRIPTION FROM dbo.logic where logic_id>=2 and logic_id<=3 ORDER BY logic_id">
+                EnableViewState="False" ProviderName="System.Data.SqlClient" SelectCommand="SELECT logic_id, DESCRIPTION FROM dbo.logic  ORDER BY logic_id">
             </asp:SqlDataSource>
             <asp:SqlDataSource ID="dsrcCenter" runat="server" ConnectionString="<%$ ConnectionStrings:MarafonConnection %>"
                 DeleteCommand="DELETE FROM dbo.Center WHERE (Center_ID = @Center_ID)" 
